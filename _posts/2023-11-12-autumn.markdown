@@ -1,0 +1,24 @@
+---
+layout:     post
+title:      "autumn"
+subtitle:   " \"autumn, in huangbaiyuan\""
+date:       2023-11-12 11:00:00
+author:     "Zsk"
+header-img: "img/in-post/2023-11-12-autumn/3.jpg"
+catalog: true
+tags:
+    - autumn
+---
+
+
+
+![图片描述](/img/in-post/2023-11-12-autumn/1.jpg)
+![图片描述](/img/in-post/2023-11-12-autumn/2.jpg)
+![图片描述](/img/in-post/2023-11-12-autumn/3.jpg)
+![图片描述](/img/in-post/2023-11-12-autumn/4.jpg)
+![图片描述](/img/in-post/2023-11-12-autumn/5.jpg)
+![图片描述](/img/in-post/2023-11-12-autumn/6.jpg)
+![图片描述](/img/in-post/2023-11-12-autumn/7.jpg)
+![图片描述](/img/in-post/2023-11-12-autumn/8.jpg)
+![图片描述](/img/in-post/2023-11-12-autumn/9.jpg)
+
