@@ -48,12 +48,3 @@ int main() {
 
 
 未完 ...
-
-
-<iframe 
-    height=450 
-    width=800 
-    src="/https://github.com/isshaokai/isshaokai.github.io/blob/1f98ca84eb6c6a774a086f0989e3d180493a69db/img/bg-little-universe.123.mp4"
-    frameborder=0 
-    allowfullscreen>
-</iframe>
