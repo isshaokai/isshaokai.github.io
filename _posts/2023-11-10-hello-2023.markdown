@@ -1,0 +1,50 @@
+---
+layout:     post
+title:      "Hello 2023"
+subtitle:   " \"Hello World, Hello Blog\""
+date:       2023-11-12 11:00:00
+author:     "Zsk"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - me
+---
+
+> “Yeah It's on. ”
+
+
+我的 Blog 开通了。
+[跳过废话，直达主题 ](#build) 
+
+作为一个有想法的画家，对于自己的Blog 肯定需要自己说了算，数据也应该自己管理，不依托于微博等平台。之前做个一个做的不是很好，索性重新搞一个。
+
+
+## 正文
+<p id = "build"></p>
+
+
+在2012年6月开启了 开启了微博
+
+![图片描述](/img/in-post/first_weibo.jpg)
+
+
+
+
+
+
+
+那Bolg 从 hello world 开始吧!
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello World!" << std::endl;
+    return 0;
+}
+```
+
+由于昨天晚上搭建服务 搞到了晚上4点才睡，所以 今天就先到这里。
+
+
+未完 ...
