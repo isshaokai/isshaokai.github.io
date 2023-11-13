@@ -13,7 +13,7 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username: u/1704818214
+# weibo_username: u/1704818214
 # zhihu_username: isshaokai
 # github_username: isshaokai
 # twitter_username: isshaokai
