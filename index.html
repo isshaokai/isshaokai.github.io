@@ -1,46 +1,108 @@
 ---
 layout: page
 description: "「记录生活」"
+header-img: "img/in-post/coffee.jpeg"
+header-mask: 0.2
 ---
 
+<style>
+  .index-hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+    color: white;
+  }
+  .index-hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+  }
+  .index-hero .sub {
+    font-size: 18px;
+    opacity: 0.85;
+    font-weight: 300;
+    font-style: italic;
+  }
+  @media (max-width: 768px) {
+    .index-hero { padding: 40px 15px 30px; }
+    .index-hero h1 { font-size: 28px; }
+    .index-hero .sub { font-size: 15px; }
+  }
+  .post-preview--clean {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .post-preview--clean .post-tags {
+    margin-bottom: 6px;
+  }
+  .post-preview--clean .tag--small {
+    font-size: 11px;
+    padding: 0 8px;
+    line-height: 20px;
+  }
+  .post-preview--clean .post-title {
+    font-size: 20px;
+    margin: 0 0 4px;
+    color: #333;
+  }
+  .post-preview--clean .post-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 6px;
+    font-weight: 300;
+  }
+  .post-preview--clean .post-meta {
+    font-size: 13px;
+    color: #999;
+    margin: 0;
+  }
+  .post-preview--clean > a:hover .post-title {
+    color: #337ab7;
+  }
+</style>
+
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/img/in-post/coffee.jpeg')">
+  <div class="header-mask"></div>
+  <div class="container">
+    <div class="index-hero">
+      <h1>{{ site.title }}</h1>
+      <p class="sub">要做一个有幻想的画家</p>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" role="main">
+
 {% for post in paginator.posts %}
-<div class="post-preview">
+<div class="post-preview post-preview--clean">
     <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
-            {% else %}
-                {{ post.content | strip_html | truncate:200 }}
-            {% endif %}
+        <div class="post-tags">
+            {% for tag in post.tags %}<span class="tag tag--small">{{ tag }}</span>{% endfor %}
         </div>
+        <h2 class="post-title">{{ post.title }}</h2>
+        {% if post.subtitle %}<h3 class="post-subtitle">{{ post.subtitle }}</h3>{% endif %}
+        <p class="post-meta"><time>{{ post.date | date: "%Y-%m-%d" }}</time></p>
     </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
 </div>
-<hr>
 {% endfor %}
 
-<!-- Pager -->
 {% if paginator.total_pages > 1 %}
 <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a>
     </li>
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &rarr;</a>
     </li>
     {% endif %}
 </ul>
 {% endif %}
+
+    </div>
+  </div>
+</div>
